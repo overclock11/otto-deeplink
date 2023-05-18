@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+</head>
+<body>
+<template id="li_template">
+    <li>
+        <a>
+            <h3 class="title">Tab Title</h3>
+            <p class="pathname">Tab Pathname</p>
+        </a>
+    </li>
+</template>
+
+<div>
+    <input type="checkbox" id="android-console" value="second_checkbox"> <label for="android-console">Consola de android</label>
+    <input type="checkbox" id="toolbar" value="toolbar=true"> <label for="toolbar">Toolbar</label>
+    <input type="checkbox" id="hides-button-bar" value="hides_bottom_bar=true"> <label for="hides-button-bar">Hides button bar</label>
+</div>
+<br>
+<button>Copiar deeplink</button>
+<ul></ul>
+
+<script src="../scripts/deeplink.js" type="module"></script>
+</body>
+</html>

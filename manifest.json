@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "DeepLink creator",
+  "description": "Add the reading time to Chrome Extension documentation articles",
+  "version": "1.0",
+  "icons": {
+    "128": "images/icon128.png"
+  },
+  "action": {
+    "default_popup": "view/index.html"
+  },
+  "permissions": [
+    "tabs",
+    "clipboardWrite",
+    "clipboardRead"
+  ],
+  "content_scripts": [
+    {
+      "js": [
+        "scripts/deeplink.js"
+      ],
+      "matches": [
+        "https://developer.chrome.com/docs/extensions/*",
+        "https://developer.chrome.com/docs/webstore/*"
+      ]
+    }
+  ]
+}
